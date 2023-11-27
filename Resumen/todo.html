@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="todo.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Proyecto de Repaso</h1>
+        <nav>
+            <ul>
+                <li><a href="authentication.html">Autenticación</a></li>
+                <li><a href="todo.html">To-Do</a></li>
+                <li><a href="functions.html">Funciones Flecha</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>To-Do</h2>
+        <div id="task-form">
+            <input type="text" id="new-task" placeholder="Nueva tarea">
+            <button onclick="addTask()">Agregar tarea</button>
+        </div>
+        <ul id="task-list">
+            <!-- Lista de tareas aquí -->
+        </ul>
+        <div id="task-actions">
+            <button onclick="showCompletedTasks()">Mostrar completadas</button>
+            <button onclick="showIncompleteTasks()">Mostrar incompletas</button>
+            <button onclick="showAllTasks()">Mostrar todas</button>
+            <button onclick="sortTasks()">Ordenar tareas</button>
+            <button onclick="clearTasks()">Limpiar tareas completadas</button>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Proyecto de Repaso</p>
+    </footer>
+</body>
+</html>

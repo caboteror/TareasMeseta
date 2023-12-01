@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal de Transporte</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Terminal de Transporte</h1>
+</header>
+
+<section id="compra">
+    <h2>Compra de Boletos</h2>
+    <form id="compraForm">
+        <label for="destino">Destino:</label>
+        <select id="destino" name="destino" required>
+            <option value="ciudadA">Ciudad A</option>
+            <option value="ciudadB">Ciudad B</option>
+            <option value="ciudadC">Ciudad C</option>
+        </select>
+
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha" required>
+
+        <label for="cantidad">Cantidad de Boletos:</label>
+        <input type="number" id="cantidad" name="cantidad" min="1" required>
+
+        <button type="button" onclick="realizarCompra()">Realizar Compra</button>
+    </form>
+
+    <ul id="listaCompras"></ul>
+</section>
+
+<footer>
+    <p>&copy; 2023 Terminal de Transporte. Todos los derechos reservados.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
